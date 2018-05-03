@@ -1,8 +1,7 @@
-let off = document.querySelectorAll('on');	
+let off = document.querySelectorAll('on');
 let on = document.querySelectorAll('off');
 
-document.querySelector('#eng').addEventListener('click', function(e) {
-
+document.querySelector('#eng').addEventListener('click', () => {
 	let on = document.querySelectorAll('.on');
 	on.forEach(function(element) {
 		element.style.display = 'block';
@@ -14,8 +13,7 @@ document.querySelector('#eng').addEventListener('click', function(e) {
 	});
 });
 
-document.querySelector('#ru').addEventListener('click', function(e) {
-
+document.querySelector('#ru').addEventListener('click', () => {
 	let off = document.querySelectorAll('.off');
 	off.forEach(function(element) {
 		element.style.display = 'block';
